@@ -1,6 +1,6 @@
 package net.rainbowcreation.loginer.guard.datasource;
 
-import net.rainbowcreation.loginer.AuthMod;
+import net.rainbowcreation.loginer.Loginer;
 import net.rainbowcreation.loginer.exception.PlayerAlreadyExistException;
 import net.rainbowcreation.loginer.exception.RegistrationException;
 import net.rainbowcreation.loginer.guard.datasource.db.IConnectionFactory;
@@ -15,7 +15,7 @@ import org.apache.logging.log4j.Logger;
 public class DatabaseSourceStrategy implements IDataSourceStrategy {
   private final IPlayersDAO<IPlayer> playersDAO;
   
-  private static final Logger LOGGER = AuthMod.LOGGER;
+  private static final Logger LOGGER = Loginer.LOGGER;
   
   public DatabaseSourceStrategy(String table, IConnectionFactory connectionFactory) throws SQLException {
     this.playersDAO = (IPlayersDAO<IPlayer>)new PlayersDAO(table, connectionFactory);
@@ -57,9 +57,3 @@ public class DatabaseSourceStrategy implements IDataSourceStrategy {
     } 
   }
 }
-
-
-/* Location:              D:\jd-gui\authmod-3.2.jar!\io\chocorean\authmod\guard\datasource\DatabaseSourceStrategy.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

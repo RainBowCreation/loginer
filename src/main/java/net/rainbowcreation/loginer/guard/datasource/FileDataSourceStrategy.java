@@ -1,6 +1,6 @@
 package net.rainbowcreation.loginer.guard.datasource;
 
-import net.rainbowcreation.loginer.AuthMod;
+import net.rainbowcreation.loginer.Loginer;
 import net.rainbowcreation.loginer.exception.PlayerAlreadyExistException;
 import net.rainbowcreation.loginer.exception.RegistrationException;
 import net.rainbowcreation.loginer.model.IPlayer;
@@ -15,6 +15,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+
+import net.rainbowcreation.loginer.utils.Reference;
 import org.apache.logging.log4j.Logger;
 
 public class FileDataSourceStrategy implements IDataSourceStrategy {
@@ -24,12 +26,12 @@ public class FileDataSourceStrategy implements IDataSourceStrategy {
   
   private long lastModification;
   
-  private static final Logger LOGGER = AuthMod.LOGGER;
+  private static final Logger LOGGER = Loginer.LOGGER;
   
   private static final String SEPARATOR = ",";
   
   public FileDataSourceStrategy() {
-    this.authFile = Paths.get(System.getProperty("java.io.tmpdir"), new String[] { "authmod.csv" }).toFile();
+    this.authFile = Paths.get(System.getProperty("java.io.tmpdir"), new String[] {Reference.NAME}).toFile();
     this.players = new ArrayList<>();
     readFile();
   }
@@ -117,9 +119,3 @@ public class FileDataSourceStrategy implements IDataSourceStrategy {
     } 
   }
 }
-
-
-/* Location:              D:\jd-gui\authmod-3.2.jar!\io\chocorean\authmod\guard\datasource\FileDataSourceStrategy.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

@@ -96,9 +96,3 @@ public class LoginPayload implements IPayload {
     return "LoginPayload{email='" + this.email + '\'' + ", username='" + this.username + '\'' + ", uuid='" + this.uuid + '\'' + '}';
   }
 }
-
-
-/* Location:              D:\jd-gui\authmod-3.2.jar!\io\chocorean\authmod\guard\payload\LoginPayload.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

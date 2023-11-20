@@ -5,34 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2a4ded7-fac7-48bd-a5d0-a26036c52e57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/d.api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/d.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/d.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/server-extension.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/server-extension.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runServer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runServer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CREDITS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE-Paulscode IBXM Library.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE-Paulscode SoundSystem CodecIBXM.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changelog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/serverExtension/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/serverExtension/utils/Reference.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/AuthMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/Loginer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/LoggedCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/LoggedCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/RegisterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/RegisterCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/event/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/event/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/PlayerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/PlayerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/authentication/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/authentication/Authenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/DatabaseSourceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/DatabaseSourceStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/FileDataSourceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/FileDataSourceStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/db/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/db/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/db/PlayersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/db/PlayersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/payload/LoginPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/payload/LoginPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/payload/RegistrationPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/payload/RegistrationPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/registration/Registrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/registration/Registrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/PlayerDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/PlayerDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/PlayerPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/PlayerPos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,15 +69,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/d"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/d&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.d [build]">
     <configuration name="d [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>

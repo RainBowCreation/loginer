@@ -1,6 +1,6 @@
 package net.rainbowcreation.loginer.command;
 
-import net.rainbowcreation.loginer.AuthMod;
+import net.rainbowcreation.loginer.Loginer;
 import net.rainbowcreation.loginer.config.AuthModConfig;
 import net.rainbowcreation.loginer.event.Handler;
 import net.rainbowcreation.loginer.exception.InvalidEmailException;
@@ -25,7 +25,7 @@ import net.minecraft.util.text.TextComponentString;
 import org.apache.logging.log4j.Logger;
 
 public class RegisterCommand implements ICommand {
-  private static final Logger LOGGER = AuthMod.LOGGER;
+  private static final Logger LOGGER = Loginer.LOGGER;
   
   private final List<String> aliases;
   
@@ -122,9 +122,3 @@ public class RegisterCommand implements ICommand {
     return new RegistrationPayload((IPayload)LoginCommand.createPayload(this.emailRequired, player, args), this.emailRequired ? args[2] : args[1]);
   }
 }
-
-
-/* Location:              D:\jd-gui\authmod-3.2.jar!\io\chocorean\authmod\command\RegisterCommand.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

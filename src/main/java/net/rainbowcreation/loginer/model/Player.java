@@ -81,9 +81,3 @@ public class Player implements IPlayer {
     return String.format("{%s, %s}", new Object[] { getEmail(), getUsername() });
   }
 }
-
-
-/* Location:              D:\jd-gui\authmod-3.2.jar!\io\chocorean\authmod\model\Player.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

@@ -34,9 +34,3 @@ public class PlayerFactory {
     return (IPlayer)player;
   }
 }
-
-
-/* Location:              D:\jd-gui\authmod-3.2.jar!\io\chocorean\authmod\guard\PlayerFactory.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

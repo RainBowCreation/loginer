@@ -51,11 +51,6 @@ public class Handler {
   @SubscribeEvent(priority = EventPriority.HIGHEST)
   public static void onJoin(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent event) {
     EntityPlayer entity = event.player;
-    double x, y, z;
-                x = -23.5;
-                y = 63.5;
-                z = 0.5;
-    entity.setPositionAndUpdate(x, y, z);
     BlockPos pos = entity.getPosition();
     float yaw = entity.rotationYaw, pitch = entity.rotationPitch;
     PlayerPos pp = new PlayerPos(pos, yaw, pitch);

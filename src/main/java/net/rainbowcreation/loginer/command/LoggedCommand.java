@@ -1,6 +1,6 @@
 package net.rainbowcreation.loginer.command;
 
-import net.rainbowcreation.loginer.AuthMod;
+import net.rainbowcreation.loginer.Loginer;
 import net.rainbowcreation.loginer.config.AuthModConfig;
 import net.rainbowcreation.loginer.event.Handler;
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ import net.minecraft.util.text.TextComponentString;
 import org.apache.logging.log4j.Logger;
 
 public class LoggedCommand implements ICommand {
-  private static final Logger LOGGER = AuthMod.LOGGER;
+  private static final Logger LOGGER = Loginer.LOGGER;
   
   private final List<String> aliases;
   
@@ -78,9 +78,3 @@ public class LoggedCommand implements ICommand {
     return true;
   }
 }
-
-
-/* Location:              D:\jd-gui\authmod-3.2.jar!\io\chocorean\authmod\command\LoggedCommand.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
