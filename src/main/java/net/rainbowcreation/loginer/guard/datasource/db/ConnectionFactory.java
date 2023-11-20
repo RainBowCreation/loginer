@@ -1,13 +1,13 @@
 package net.rainbowcreation.loginer.guard.datasource.db;
 
-import net.rainbowcreation.loginer.Loginer;
+import net.rainbowcreation.loginer.Main;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import org.apache.logging.log4j.Logger;
 
 public class ConnectionFactory implements IConnectionFactory {
-  private static final Logger LOGGER = Loginer.LOGGER;
+  private static final Logger LOGGER = Main.LOGGER;
   
   private final String url;
   

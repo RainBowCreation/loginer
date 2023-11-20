@@ -22,7 +22,7 @@ import net.rainbowcreation.loginer.utils.Reference;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, serverSideOnly = true, acceptableRemoteVersions = "*", acceptedMinecraftVersions = "[1.12.2]")
-public class Loginer {
+public class Main {
 
 
   public static Logger LOGGER = FMLLog.log;

@@ -4,26 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2a4ded7-fac7-48bd-a5d0-a26036c52e57" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c2a4ded7-fac7-48bd-a5d0-a26036c52e57" name="Changes" comment="remove lobbyspawn for standalone">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/AuthMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/Loginer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/Loginer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/LoggedCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/LoggedCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/LoginCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/RegisterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/command/RegisterCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/event/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/event/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/PlayerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/PlayerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/authentication/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/authentication/Authenticator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/DatabaseSourceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/DatabaseSourceStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/FileDataSourceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/FileDataSourceStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/db/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/db/ConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/db/PlayersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/datasource/db/PlayersDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/payload/LoginPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/payload/LoginPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/payload/RegistrationPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/payload/RegistrationPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/registration/Registrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/guard/registration/Registrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/PlayerDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/PlayerDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/PlayerPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rainbowcreation/loginer/model/PlayerPos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +50,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -76,7 +69,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/d&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/deaProjects/lobbyspawn&quot;
   }
 }</component>
   <component name="RunManager" selected="Gradle.d [build]">
@@ -140,6 +133,15 @@
       <option name="presentableId" value="Default" />
       <updated>1700365870177</updated>
     </task>
+    <task id="LOCAL-00001" summary="remove lobbyspawn for standalone">
+      <option name="closed" value="true" />
+      <created>1700457383381</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700457383381</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +156,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="remove lobbyspawn for standalone" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove lobbyspawn for standalone" />
   </component>
 </project>

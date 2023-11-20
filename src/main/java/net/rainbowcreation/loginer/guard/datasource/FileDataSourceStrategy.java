@@ -1,6 +1,6 @@
 package net.rainbowcreation.loginer.guard.datasource;
 
-import net.rainbowcreation.loginer.Loginer;
+import net.rainbowcreation.loginer.Main;
 import net.rainbowcreation.loginer.exception.PlayerAlreadyExistException;
 import net.rainbowcreation.loginer.exception.RegistrationException;
 import net.rainbowcreation.loginer.model.IPlayer;
@@ -26,7 +26,7 @@ public class FileDataSourceStrategy implements IDataSourceStrategy {
   
   private long lastModification;
   
-  private static final Logger LOGGER = Loginer.LOGGER;
+  private static final Logger LOGGER = Main.LOGGER;
   
   private static final String SEPARATOR = ",";
   

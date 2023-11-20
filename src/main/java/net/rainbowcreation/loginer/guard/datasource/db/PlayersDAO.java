@@ -1,6 +1,6 @@
 package net.rainbowcreation.loginer.guard.datasource.db;
 
-import net.rainbowcreation.loginer.Loginer;
+import net.rainbowcreation.loginer.Main;
 import net.rainbowcreation.loginer.model.IPlayer;
 import net.rainbowcreation.loginer.model.Player;
 import java.sql.Connection;
@@ -12,7 +12,7 @@ import java.util.Map;
 import org.apache.logging.log4j.Logger;
 
 public class PlayersDAO implements IPlayersDAO<IPlayer> {
-  private static final Logger LOGGER = Loginer.LOGGER;
+  private static final Logger LOGGER = Main.LOGGER;
   
   private final String table;
   

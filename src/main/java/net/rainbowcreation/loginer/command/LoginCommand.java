@@ -1,6 +1,6 @@
 package net.rainbowcreation.loginer.command;
 
-import net.rainbowcreation.loginer.Loginer;
+import net.rainbowcreation.loginer.Main;
 import net.rainbowcreation.loginer.config.AuthModConfig;
 import net.rainbowcreation.loginer.event.Handler;
 import net.rainbowcreation.loginer.exception.BannedPlayerException;
@@ -25,7 +25,7 @@ import net.minecraft.util.text.TextComponentString;
 import org.apache.logging.log4j.Logger;
 
 public class LoginCommand implements ICommand {
-  private static final Logger LOGGER = Loginer.LOGGER;
+  private static final Logger LOGGER = Main.LOGGER;
   
   private final List<String> aliases;
   
