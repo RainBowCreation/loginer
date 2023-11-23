@@ -4,7 +4,7 @@ import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.Config.Comment;
 import net.rainbowcreation.loginer.utils.Reference;
 
-@Config(modid = Reference.MODID)
+@Config(modid = Reference.MODID, name = Reference.NAME, category = "general")
 public class AuthModConfig {
   @Comment({"Email will be asked to the player for registration and authentication"})
   public static boolean emailRequired = false;

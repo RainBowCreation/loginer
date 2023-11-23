@@ -1,8 +1,12 @@
 package net.rainbowcreation.loginer.event;
 
+import net.minecraftforge.fml.common.Loader;
+import net.rainbowcreation.api.compatibles.lobbyspawn;
+import net.rainbowcreation.loginer.Main;
 import net.rainbowcreation.loginer.config.AuthModConfig;
 import net.rainbowcreation.loginer.model.PlayerDescriptor;
 import net.rainbowcreation.loginer.model.PlayerPos;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ScheduledExecutorService;
@@ -51,6 +55,12 @@ public class Handler {
   @SubscribeEvent(priority = EventPriority.HIGHEST)
   public static void onJoin(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent event) {
     EntityPlayer entity = event.player;
+    if (Loader.isModLoaded("rbclobbyspawn")) { //actually it modid
+      if (Main.api.setting().ENABLE) {
+        lobbyspawn lobbyspawn = new lobbyspawn();
+        lobbyspawn.onJoin(entity);
+      }
+    }
     BlockPos pos = entity.getPosition();
     float yaw = entity.rotationYaw, pitch = entity.rotationPitch;
     PlayerPos pp = new PlayerPos(pos, yaw, pitch);

@@ -10,6 +10,7 @@
   "authorList": ["RainBowCreation", "NathanielSong", "VocanicZ"],
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["rbclobbyspawn"],
+  "useDependencyInformation": "true"
 }
 ]

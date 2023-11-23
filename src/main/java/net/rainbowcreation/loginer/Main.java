@@ -1,5 +1,8 @@
 package net.rainbowcreation.loginer;
 
+import net.minecraftforge.fml.client.config.GuiEditArrayEntries;
+import net.rainbowcreation.api.API;
+import net.rainbowcreation.api.utils.IString;
 import net.rainbowcreation.loginer.command.LoggedCommand;
 import net.rainbowcreation.loginer.command.LoginCommand;
 import net.rainbowcreation.loginer.command.RegisterCommand;
@@ -21,28 +24,30 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.rainbowcreation.loginer.utils.Reference;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, serverSideOnly = true, acceptableRemoteVersions = "*", acceptedMinecraftVersions = "[1.12.2]")
+@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, serverSideOnly = true, acceptableRemoteVersions = "*", acceptedMinecraftVersions = "[1.12.2]", dependencies = "after:rbclobbyspawn")
 public class Main {
-
-
   public static Logger LOGGER = FMLLog.log;
   
   private Handler handler;
   
   private IDataSourceStrategy dataSourceStrategy;
+  public static API api;
+  public static IString iString;
   
   @EventHandler
   public void preInit(FMLPreInitializationEvent event) throws Exception {
+    api = API.getInstance();
+    iString = new IString();
     LOGGER = event.getModLog();
+    api.setLogger(LOGGER);
+    iString.header(Reference.NAME+":"+Reference.VERSION);
     switch (AuthModConfig.dataSourceStrategy) {
       case DATABASE:
         this.dataSourceStrategy = (IDataSourceStrategy)new DatabaseSourceStrategy(AuthModConfig.database.table, (IConnectionFactory)new ConnectionFactory(AuthModConfig.database.dialect, AuthModConfig.database.host, AuthModConfig.database.port, AuthModConfig.database.database, AuthModConfig.database.user, AuthModConfig.database.password));
         LOGGER.info("Now using DatabaseSourceStrategy.");
         return;
       case FILE:
-        this
-          
-          .dataSourceStrategy = (IDataSourceStrategy)new FileDataSourceStrategy(Paths.get(event.getModConfigurationDirectory().getAbsolutePath(), new String[] { Reference.NAME+"_players.csv" }).toFile());
+        this.dataSourceStrategy = (IDataSourceStrategy)new FileDataSourceStrategy(Paths.get(event.getModConfigurationDirectory().getAbsolutePath(), new String[] { Reference.NAME+"_players.csv" }).toFile());
         LOGGER.info("Now using FileDataSourceStrategy.");
         return;
     } 
